@@ -1,0 +1,79 @@
+.projects {
+    padding: 5rem 2rem;
+    background-color: #0f0f0f;
+    color: #fff;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #ff4081;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .project-card {
+        background-color: #1a1a1a;
+        padding: 2rem;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: left;
+
+        h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #ccc;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+
+            li {
+                background: #222;
+                padding: 0.4rem 0.8rem;
+                border-radius: 5px;
+                font-size: 0.85rem;
+                color: #ff4081;
+            }
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                color: #ff4081;
+                font-weight: 500;
+                font-size: 0.95rem;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(255, 64, 129, 0.2);
+        }
+    }
+}

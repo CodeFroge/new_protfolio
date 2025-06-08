@@ -1,0 +1,60 @@
+.about {
+    padding: 5rem 2rem;
+    background-color: #111;
+    color: #fff;
+
+    &__container {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #ff4081;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        color: #ccc;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    &__skills {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            li {
+                background-color: #222;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                color: #ff4081;
+                font-weight: 500;
+                font-size: 0.95rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+
+                .skill-icon {
+                    font-size: 1.2rem;
+                    color: #ff79a8;
+                }
+            }
+        }
+
+    }
+}
